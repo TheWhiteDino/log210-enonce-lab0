@@ -1,1 +1,10 @@
-// Vous devez compléter ce fichier
+@startuml dss-redemarrerJeu
+hide footbox
+title DSS pour le sscénario Redémarrer
+
+actor ":Joueur" as j
+participant ":Système" as s
+
+j -> s: redémarrerJeu();
+
+@enduml

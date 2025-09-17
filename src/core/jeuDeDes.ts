@@ -55,6 +55,11 @@ export class JeuDeDes {
         return JSON.stringify(resultat);
     }
 
+    public redemarrerJeu(): string {
+        this._joueurs.clear();
+        return JSON.stringify({ message: "Le jeu a été redémarré." });
+    }
+
     public terminerJeu(nom: string): string {
         if (!this._joueurs.get(nom)) {
             throw new NotFoundError(`Joueur '${nom}' n'existe pas.`);

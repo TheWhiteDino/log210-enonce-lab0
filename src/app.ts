@@ -83,7 +83,7 @@ class App {
       }
     });
 
-    // Route to login
+    // Route to log off
     router.get('/signout', async function (req, res) {
       // simuler une déconnexion
       user = { isAnonymous: true };
