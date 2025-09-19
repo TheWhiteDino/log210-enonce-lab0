@@ -113,12 +113,12 @@ export class JeuRouter {
       const resultat = this._controleurJeu.redemarrerJeu();
       const resultatObj = JSON.parse(resultat);
       req.flash('info', 'L\'application redémarre');
-
-      res.status(200).send({
-        message: 'Success',
-        status: res.status,
-        resultat: resultatObj
-      });
+      res.status(200)
+        .send({
+          message: 'Success',
+          status: res.status,
+          resultat: resultatObj
+        });
     } catch (error) {
       this._errorCode500(error, req, res);
     }

@@ -67,7 +67,10 @@ class App {
           title: `${titreBase}`,
           user: user,
           // créer nouveau tableau de joueurs qui est trié par ratio
-          joueurs: JSON.parse(jeuRoutes.controleurJeu.joueurs)
+          joueurs: JSON.parse(jeuRoutes.controleurJeu.joueurs).map(joueur => ({
+            ...joueur,
+            ratio: joueur.lancers > 0 ? joueur.lancersGagnes / joueur.lancers : 0
+          })).sort((a, b) => b.ratio - a.ratio)
         });
     });
 
