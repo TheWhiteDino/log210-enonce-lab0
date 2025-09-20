@@ -9,8 +9,8 @@ beforeAll(async () => {
 });
 
 describe('src/core/jeuDeDes.ts', () => {
-  it("devrait contenir redemarrerJeu() {", () => {
-    expect(content.includes("redemarrerJeu() {")).toBeTruthy();
+  it("devrait contenir redemarrerJeu(): string {", () => {
+    expect(content.includes("redemarrerJeu(): string {")).toBeTruthy();
   });
 
   it("devrait contenir this._joueurs.clear()", () => {

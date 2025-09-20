@@ -1,4 +1,4 @@
-@startuml
+@startuml rdcu-demarrerJeu
 skinparam style strictuml
 skinparam defaultfontname Verdana
 title RDCU pour démarrerJeu
