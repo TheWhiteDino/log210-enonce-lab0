@@ -13,17 +13,17 @@ describe('JeuDeDesTest', () => {
 
   it('devrait retourner une valeur entre 3 et 18', () => {
     for (let i = 0; i < 500; i++) {
-      expect(jdd.brasser()).toBeWithin(3, 18);
+      expect(jdd.brasser()).toBeWithin(3, 19);
     }
   })
 
   it('devrait retourner finalement toutes les valeurs entre 3 et 18', () => {
     const resultats = new Set();
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 5000; i++) {
       resultats.add(jdd.brasser())
     }
     expect(resultats.size).toBe(16);
-    for (let i = 1; i < 18; i++) {
+    for (let i = 3; i < 18; i++) {
       expect(resultats.has(i + 1)).toBeTrue();
     }
     // cas particuliers
