@@ -2,7 +2,7 @@
 
 - <nomComplet1>Dubasque Simon</nomComplet1>
 - <courriel1>simon.dubasque.1@ens.etsmtl.ca</courriel1>
-- <codeMoodle1>DU12345</codeMoodle1>
+- <codeMoodle1>AV61740</codeMoodle1>
 - <githubAccount1>SimonDubasqueETS</githubAccount1>
 
 # Squelette pour un API simple dans Node, Express et TypeScript
