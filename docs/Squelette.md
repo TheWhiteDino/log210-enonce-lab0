@@ -170,6 +170,8 @@ Voici la même figure, mais sous forme de diagramme de séquence avec l'acteur. 
 
 ### Diagramme de cas d'utilisation
 
+Ne voulant pas changer les liens, j'ai garder le cas d'utilisation et autres diagrammes d'origines dans ce document, mais je les ai bien modifié comme il faut pour la nouvelle version du jeu dans les documents de ce rendu.
+
 ![Diagramme de cas d'utilisation](http://www.plantuml.com/plantuml/proxy?cache=no&fmt=svg&src=https://raw.githubusercontent.com/profcfuhrmanets/log210-jeu-de-des-node-express-ts/master/docs/modeles/dcu.puml)
 
 ### Diagramme de classes logicielles
